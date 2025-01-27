@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMI Calculator</title>
+    <link rel="stylesheet" href="./css/fontawesome-free-6.7.2-web/fontawesome-free-6.7.2-web/css/all.min.css">
+    <link rel="shortcut icon" href="./img/Retail Pe Cut White/RETAIL PE CUT WHITE..webp" type="image/x-icon">
+    <link rel="stylesheet" href="./css/Roboto.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Nav Section -->
+    <header>
+        <div class="container">
+            <nav><!-- Display: Flex -->
+                <div class="nav-logo">
+                    <a href="#"><img src="./img/Retail Pe Logo/RETAIL PE LOGO..webp" alt=""></a>
+                </div>
+                <ul class="nav-links"><!-- Display: Flex -->
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#">Loan</a></li>
+                    <li><a href="#">Invesment</a></li>
+                    <li class="has-submenu"><a href="#">Calculators <span><i class="fa-solid fa-angle-down"></i></span></a>
+                        <div class="submenu">
+                            <a href="./eligibility.html">Loan Eligibility</a>
+                            <a href="./calculator.html">EMI Calculators</a>
+                        </div>
+                    </li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="cta-1"><!-- Sign In/Sign Up Btn -->
+                    <a href="#">Sign In</a>
+                    <a href="#">Sign Up</a>
+                </div>
+                <button class="toggle"><i class="fa-solid fa-bars"></i></button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- EMI Calculator -->
+    <div class="calculator">
+        <div class="container">
+            <h2>EMI CALCULATOR</h2>
+            <div class="calculator-container">
+                <div class="calculator-info">
+                    <!-- Loan Amount Slider -->
+                    <div class="slider-group">
+                        <div class="slider-lnt">
+                            <label class="clctr-txt" for="loanAmount">Loan Amount</label>
+                            <input type="number" id="loanAmountValue" class="slider-value" value="0" readonly>
+                        </div>
+                        <input type="range"id="loanAmount" class="bar-slider" min="100000" max="10000000" value="0" step="100000" oninput="updateValue('loanAmountValue', this.value)">
+                    </div>
+                    <!-- Interest Slider -->
+                    <div class="slider-group">
+                        <div class="slider-lnt">
+                            <label class="clctr-txt" for="interestRate">Interest (%)</label>
+                            <input type="number" id="interestRateValue" class="slider-value" value="0" readonly>
+                        </div>
+                        <input type="range" id="interestRate" class="bar-slider" min="0" max="20" value="0" step="0.1" oninput="updateValue('interestRateValue', this.value)">
+                    </div>
+                    <!-- Loan Tenure Slider -->
+                    <div class="slider-group">
+                        <div class="slider-lnt">
+                            <label class="clctr-txt" for="loanTenure">Loan Tenure</label>
+                            <input type="number" id="loanTenureValue" class="slider-value" value="0" readonly>
+                        </div>
+                        <input type="range" id="loanTenure" class="bar-slider" min="1" max="30" value="0" step="1" oninput="updateValue('loanTenureValue', this.value)">
+                    </div>
+                    <!-- Buttons -->
+                    <div class="emi-breakdown">
+                        <p><span class="dot principal"></span> Principal <span id="principalResult">₹ 0</span></p>
+                        <p><span class="dot interest"></span> Interest <span id="interestResult">₹ 0</span></p>
+                        <p><span class="dot total"></span> Total Amount <span id="totalResult">₹ 0</span></p>
+                    </div>
+                    <button class="apply-btn">Apply Now</button>
+                </div>
+                <div class="calculator-info">
+                    <div class="emi-circle">
+                        <h3>EMI</h3>
+                        <p id="emiResult">₹ 0</p>
+                    </div>
+                    <div class="btn-grp">
+                        <button onclick="resetValues()">RESET</button>
+                        <button onclick="calculateEMI()">CALCULATE</button>
+                    </div>
+                    <img src="./img/Calculator Final/Calculator final img..webp" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- overviwe -->
+    <section>
+        <div class="overview">
+            <div class="container">
+                <div class="ovew-info">
+                    <div class="ovew-works">
+                        <h2>How EMI Calculator Works?</h2>
+                        <p>EMI Calculator online is a very handy tool which simplifies your EMI calculation in just a few seconds. In order to calculate EMI using EMI Calculator in India, you need to input as said earlier- the loan amount, the interest rate and the loan tenure.</p>
+                        <ul>
+                            <h3>The mathematical calculation for EMI using EMI Calculator Formula is-</h3>
+                            <li>EMI= [P*r*(1+r)n]/[((1+r)n-1)]</li>
+                            <li>'EMI' is the Equated Monthly Instalment</li>
+                            <li>'P' is the Principal loan amount that is borrowed</li>
+                            <li>'r' is the interest rate that is levied on the loan amount calculated on a monthly basis</li>
+                            <li>'n' is the loan tenure in number of months</li>
+                        </ul>
+                        <p>If you want to calculate the EMI for various combinations of loan amount, rate of interest and loan tenure using a manual process, then the calculation will be very complex and error-prone. EMI Calculator solves this complexity of EMI calculation and gives you the result in a split second. Also, EMI Calculator repayment schedule details help in giving a clear picture of the EMI payments.</p>
+                        <p>This the basic EMI Calculator formula but sometimes processing fee is also taken into consideration in evaluating EMI online. A certain % of the loan amount borrowed is charged as processing fee which usually lies between 1% to 3% that differs for different lending institutions.</p>
+                        <p>Using EMI Calculator online, you get an idea of EMI payments whether it is within your repaying capacity or not. If not you can adjust the loan tenure and/or loan amount keeping in mind that the rate of interest and processing fees (if applicable) can't be altered. An added advantage of using EMI Calculator online is that, you can compare different loan offers by various lending institutions and opting for low-interest rate of interest and zero processing fees to lower your EMI payments.</p>
+                        <p>Based on different types of loans, you are benefitted with various kinds of EMI Calculator such as EMI Calculator for Personal Loan, EMI Calculator for Car Loan, EMI Calculator for Business Loan and much more. Moreover, EMI Calculator is also used for evaluating EMI of different banks with different kind of loans namely- EMI Calculator Personal loan Axis Bank, EMI Calculator for home loan SBI, EMI Calculator HDFC Car Loan, EMI Calculator home loan HDFC, EMI Calculator Personal loan SBI and so on.</p>
+                    </div>
+                    <div class="ovew-works">
+                        <h2>How do you use EMI Calculator?</h2>
+                        <p>For using EMI Calculator in India, you need to input the loan amount that you are planning to borrow or have already borrowed, loan tenure and the rate of interest.</p>
+                        <ul>
+                            <li>Amount of Loan</li>
+                            <li>'EMI' is the Equated Monthly Instalment
+                                <p>The first most important thing to calculate EMI using EMI Calculator is the loan amount borrowed for meeting any of your personal needs like renovating home, buying a new car or expanding the business. The higher the loan amount you borrow higher will be your EMI payment. So, it is always better to borrow the loan amount which perfectly suits your monetary requirement and is within your repayment capacity.</p>
+                            </li>
+                            <li>Rate of Interest
+                                <p>The interest rate is charged on the borrowed loan amount. Depending on different banks and lending institutions, the interest rate varies for different loan types. So, before taking a loan, you can use EMI Calculator for comparing the EMI of various interest rates offered by different banks and accordingly go for the lower interest rate.</p>
+                            </li>
+                            <li>Loan Tenure
+                                <p>The loan repayment tenure is called the loan tenure. It varies based on the loan type, lending institution and the principal amount. If you go for a longer tenure to repay the loan, then you need to pay a higher interest rate. As a result, you will have to pay higher EMI. So, it is always advisable to calculate the EMI payments using EMI Calculator taking into account the shorter loan tenure which will be lower as compared to longer loan tenure.</p>
+                                <p>EMI Calculator gives you a pictorial depiction of your EMI payments which helps you how much to borrow and repay it within a shorter time period which helps in managing your finances in a much disciplined manner.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer Section -->
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <!-- <div class="toggle-bar" onclick="toggleFooter()"><i class="fa-solid fa-bars"></i></div> -->
+                <div class="togglepage">
+                    <div class="primary-footer">
+                        <div class="ftr-itm">
+                            <a class="drop" href="#"><img src="./img/Logo/Logo_maker_project-1-removebg-preview-1..webp"
+                                    alt=""></a>
+                            <form action="#">
+                                <input class="frm-info" type="text" name="text" id="text"
+                                    placeholder="Enter Your Email...">
+                                <button class="ftr-submit" type="submit"><i
+                                        class="fa-solid fa-arrow-right-long"></i></button>
+                            </form>
+                            <div class="ftr-link">
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <!-- <div class="ftr-itm">
+                            <h2><a href="#">Resources</a></h2>
+                            <p><a href="#">Blog</a></p>
+                            <p><a href="#">Mutual Fund Explorer</a></p>
+                            <p><a href="#">Blog</a></p>
+                            <p><a href="#">Mutual Fund Explorer</a></p>
+                            <p><a href="#">Blog</a></p>
+                            <p><a href="#">Mutual Fund Explorer</a></p>
+                        </div> -->
+                        <div class="ftr-itm">
+                            <h2><a href="#">Risk & Management</a></h2>
+                            <p><a href="./terms.html">Terms & Conditions</a></p>
+                            <p><a href="#">Privacy Policy</a></p>
+                            <p><a href="#">Risk</a></p>
+                            <p><a href="#">Disclimer</a></p>
+                        </div>
+                        <div class="ftr-itm">
+                            <h2><a href="#">Contact Us</a></h2>
+                            <a href="#">Madhyamgram, Chandigard Kol - 700130</a>
+                        </div>
+                    </div>
+                    <!-- <div class="secondery-footer">
+                        <div class="ftr-itm">
+                            <h2><a href="#">FUND CATEGORY</a></h2>
+                            <p><a href="#">EQUITY FUNDS</a></p>
+                            <p><a href="#">EQUITY FUNDS</a></p>
+                            <p><a href="#">EQUITY FUNDS</a></p>
+                            <p><a href="#">EQUITY FUND</a>S</p>
+                            <p><a href="#">EQUITY FUNDS</a></p>
+                            <p><a href="#">EQUITY FUNDS</a></p>
+                        </div>
+                        <div class="ftr-itm">
+                            <h2><a href="#">MUTUAL FUND HOUSE</a></h2>
+                            <p><a href="#">SBI Mutal Funds</a></p>
+                            <p><a href="#">SBI Mutal Funds</a></p>
+                            <p><a href="#">SBI Mutal Funds</a></p>
+                            <p><a href="#">SBI Mutal Funds</a></p>
+                            <p><a href="#">SBI Mutal Funds</a></p>
+                            <p><a href="#">SBI Mutal Funds</a></p>
+                            <p><a href="#">SBI Mutal Funds</a></p>
+                        </div>
+                        <div class="ftr-itm">
+                            <p><a href="#">SBI Mutal Funds</a></p>
+                            <p><a href="#">SBI Mutal Funds</a></p>
+                            <p><a href="#">SBI Mutal Funds</a></p>
+                            <p><a href="#">SBI Mutal Funds</a></p>
+                            <p><a href="#">SBI Mutal Funds</a></p>
+                            <p><a href="#">SBI Mutal Funds</a></p>
+                            <p><a href="#">SBI Mutal Funds</a></p>
+                        </div>
+                        <div class="ftr-itm">
+                            <p><a href="#">SBI Mutal Funds</a></p>
+                            <p><a href="#">SBI Mutal Funds</a></p>
+                            <p><a href="#">SBI Mutal Funds</a></p>
+                            <p><a href="#">SBI Mutal Funds</a></p>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="copyright">
+                    <p>© Copyright Retail Pe (NFSPL) All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Eligibility</title>
+    <link rel="stylesheet" href="./css/fontawesome-free-6.7.2-web/fontawesome-free-6.7.2-web/css/all.min.css">
+    <link rel="shortcut icon" href="./img/Retail Pe Cut White/RETAIL PE CUT WHITE..webp" type="image/x-icon">
+    <link rel="stylesheet" href="./css/Roboto.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- Nav Section -->
+    <header>
+        <div class="container">
+            <nav><!-- Display: Flex -->
+                <div class="nav-logo">
+                    <a href="#"><img src="./img/Retail Pe Logo/RETAIL PE LOGO..webp" alt=""></a>
+                </div>
+                <ul class="nav-links"><!-- Display: Flex -->
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#">Loan</a></li>
+                    <li><a href="#">Invesment</a></li>
+                    <li class="has-submenu"><a href="#">Calculators <span><i
+                                    class="fa-solid fa-angle-down"></i></span></a>
+                        <div class="submenu">
+                            <a href="./eligibility.html">Loan Eligibility</a>
+                            <a href="./calculator.html">EMI Calculators</a>
+                        </div>
+                    </li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="cta-1"><!-- Sign In/Sign Up Btn -->
+                    <a href="#">Sign In</a>
+                    <a href="#">Sign Up</a>
+                </div>
+                <button class="toggle"><i class="fa-solid fa-bars"></i></button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Eligibility Section -->
+    <section>
+        <div class="eligibility">
+            <div class="container">
+                <div class="elbt-info">
+                    <h1>CHECK YOUR ELIGIBILITY</h1>
+                    <div class="elbt-dsg">
+                        <form id="eligibilityForm">
+                            <div class="form-flex">
+                                <label for="name">Name</label>
+                                <input class="el-txt" type="text" id="name" name="name" placeholder="Enter your name" required>
+                            </div>
+                            <div class="form-flex">
+                                <label for="monthlyIncome">Monthly Income</label>
+                                <div class="slider-container">
+                                    <input type="number" id="incomeBox" name="incomeBox" value="0" readonly>
+                                    <input type="range" id="monthlyIncome" name="monthlyIncome" class="slider" min="0" max="100000" value="0" oninput="updateValue('incomeBox', this.value)">
+                                </div>
+                            </div>
+                            <div class="form-flex">
+                                <label for="tenure">Tenure (Years)</label>
+                                <div class="slider-container">
+                                    <input type="number" id="tenureBox" name="tenureBox" value="0" readonly>
+                                    <input type="range" id="tenure" name="tenure" class="slider" min="1" max="30" value="1" oninput="updateValue('tenureBox', this.value)">
+                                </div>
+                            </div>
+                            <div class="form-flex">
+                                <label for="interestRate">Interest Rate (%)</label>
+                                <div class="slider-container">
+                                    <input type="number" id="rateBox" name="rateBox" value="0" readonly>
+                                    <input type="range" id="interestRate" name="interestRate" class="slider" min="1" max="20" value="1" oninput="updateValue('rateBox', this.value)">
+                                </div>
+                            </div>
+                            <div class="form-flex">
+                                <label for="email">Email ID</label>
+                                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                            </div>
+                            <div class="form-flex">
+                                <label for="mobile">Mobile</label>
+                                <div class="form-flex">
+                                    <input type="tel" id="mobile" name="mobile" placeholder="+91" required>
+                                    <button type="button" class="verify-button" onclick="sendOTP()"><span>Verify</span> <i class="fa-solid fa-arrow-right-long"></i></button>
+                                </div>
+                            </div>
+                            <input class="from-l" type="text" id="otp" name="otp" placeholder="Enter OTP" required>
+                            <div class="terms">
+                                <input type="checkbox" id="terms" name="terms" required>
+                                <label for="terms">Accept Terms & Conditions</label>
+                                <button type="submit" class="submit-button">CHECK VERIFY</button>
+                            </div>
+                        </form>
+                        <div class="elbt-img">
+                            <img src="./img/Calculator Final/Calculator final img..webp" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer Section -->
+    <!-- footer Section -->
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <!-- <div class="toggle-bar" onclick="toggleFooter()"><i class="fa-solid fa-bars"></i></div> -->
+                <div class="togglepage">
+                    <div class="primary-footer">
+                        <div class="ftr-itm">
+                            <a class="drop" href="#"><img src="./img/Logo/Logo_maker_project-1-removebg-preview-1..webp"
+                                    alt=""></a>
+                            <form action="#">
+                                <input class="frm-info" type="text" name="text" id="text"
+                                    placeholder="Enter Your Email...">
+                                <button class="ftr-submit" type="submit"><i
+                                        class="fa-solid fa-arrow-right-long"></i></button>
+                            </form>
+                            <div class="ftr-link">
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <!-- <div class="ftr-itm">
+                            <h2><a href="#">Resources</a></h2>
+                            <p><a href="#">Blog</a></p>
+                            <p><a href="#">Mutual Fund Explorer</a></p>
+                            <p><a href="#">Blog</a></p>
+                            <p><a href="#">Mutual Fund Explorer</a></p>
+                            <p><a href="#">Blog</a></p>
+                            <p><a href="#">Mutual Fund Explorer</a></p>
+                        </div> -->
+                        <div class="ftr-itm">
+                            <h2><a href="#">Risk & Management</a></h2>
+                            <p><a href="./terms.html">Terms & Conditions</a></p>
+                            <p><a href="#">Privacy Policy</a></p>
+                            <p><a href="#">Risk</a></p>
+                            <p><a href="#">Disclimer</a></p>
+                        </div>
+                        <div class="ftr-itm">
+                            <h2><a href="#">Contact Us</a></h2>
+                            <a href="#">Madhyamgram, Chandigard Kol - 700130</a>
+                        </div>
+                    </div>
+                    <!-- <div class="secondery-footer">
+                        <div class="ftr-itm">
+                            <h2><a href="#">FUND CATEGORY</a></h2>
+                            <p><a href="#">EQUITY FUNDS</a></p>
+                            <p><a href="#">EQUITY FUNDS</a></p>
+                            <p><a href="#">EQUITY FUNDS</a></p>
+                            <p><a href="#">EQUITY FUND</a>S</p>
+                            <p><a href="#">EQUITY FUNDS</a></p>
+                            <p><a href="#">EQUITY FUNDS</a></p>
+                        </div>
+                        <div class="ftr-itm">
+                            <h2><a href="#">MUTUAL FUND HOUSE</a></h2>
+                            <p><a href="#">SBI Mutal Funds</a></p>
+                            <p><a href="#">SBI Mutal Funds</a></p>
+                            <p><a href="#">SBI Mutal Funds</a></p>
+                            <p><a href="#">SBI Mutal Funds</a></p>
+                            <p><a href="#">SBI Mutal Funds</a></p>
+                            <p><a href="#">SBI Mutal Funds</a></p>
+                            <p><a href="#">SBI Mutal Funds</a></p>
+                        </div>
+                        <div class="ftr-itm">
+                            <p><a href="#">SBI Mutal Funds</a></p>
+                            <p><a href="#">SBI Mutal Funds</a></p>
+                            <p><a href="#">SBI Mutal Funds</a></p>
+                            <p><a href="#">SBI Mutal Funds</a></p>
+                            <p><a href="#">SBI Mutal Funds</a></p>
+                            <p><a href="#">SBI Mutal Funds</a></p>
+                            <p><a href="#">SBI Mutal Funds</a></p>
+                        </div>
+                        <div class="ftr-itm">
+                            <p><a href="#">SBI Mutal Funds</a></p>
+                            <p><a href="#">SBI Mutal Funds</a></p>
+                            <p><a href="#">SBI Mutal Funds</a></p>
+                            <p><a href="#">SBI Mutal Funds</a></p>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="copyright">
+                    <p>© Copyright Retail Pe (NFSPL) All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
