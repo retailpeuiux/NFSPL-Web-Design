@@ -122,7 +122,6 @@ nav {
     color: #d8d8d8 !important;
 }
 @starting-style {
-
     /* For Smooth Animation */
     .has-submenu:hover .submenu {
         transform: translateY(20px);
@@ -700,7 +699,7 @@ nav {
 .choose-us-slider .owl-nav button:hover,
 .choose-us-slider__two .owl-nav button:hover,
 .choose-us-slider__three .owl-nav button:hover,
-.choose-us-slider__four .owl-nav button:hover, {
+.choose-us-slider__four .owl-nav button:hover {
     background: #ffffff;
     background-image: -moz-linear-gradient( 90deg, rgb(228,91,45) 0%, rgb(240,121,33) 33%, rgb(252,151,21) 100%);
     background-image: -webkit-linear-gradient( 90deg, rgb(228,91,45) 0%, rgb(240,121,33) 33%, rgb(252,151,21) 100%);
@@ -1192,14 +1191,10 @@ nav {
     display: flex;
     outline: none;
     border: none;
-    /* display: none; */
     color: #6819E6;
     background-color: transparent;
     transform: translateX(-50%);
     cursor: pointer;
-}
-.togglepage {
-    /* display: none; */
 }
 .primary-footer {
     padding: 4rem 0;
