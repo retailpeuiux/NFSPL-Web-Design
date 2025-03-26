@@ -1,0 +1,20 @@
+<!-- Primary Meta Tags -->
+<title>Retail Pe | Shop Loan</title>
+<meta name="title" content="Retail Pe | Shop Loan" />
+<meta name="description" content="Retail Pe platform is designed to empower small businesses with access to easy credit | Download Retail Pe Mobile Application | Apply Now" />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://retailpe.in/" />
+<meta property="og:title" content="Retail Pe | Shop Loan" />
+<meta property="og:description" content="Retail Pe platform is designed to empower small businesses with access to easy credit | Download Retail Pe Mobile Application | Apply Now" />
+<meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://retailpe.in/" />
+<meta property="twitter:title" content="Retail Pe | Shop Loan" />
+<meta property="twitter:description" content="Retail Pe platform is designed to empower small businesses with access to easy credit | Download Retail Pe Mobile Application | Apply Now" />
+<meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+
+<!-- Meta Tags Generated with https://metatags.io -->
