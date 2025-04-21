@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/fontawesome-free-6.7.2-web/fontawesome-free-6.7.2-web/css/all.min.css">
+    <link rel="shortcut icon" href="./img/Retail Pe Cut White/RETAIL PE CUT WHITE..webp" type="image/x-icon">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/Roboto.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav><!-- Display: Flex -->
+                <div class="nav-logo">
+                    <a href="#"><img src="./img/Retail Pe Logo/RETAIL PE LOGO..webp" alt="logo"></a>
+                </div>
+                <ul class="nav-links"><!-- Display: Flex -->
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#">Loan</a></li>
+                    <li><a href="#">Invesment</a></li>
+                    <li class="has-submenu"><a href="#">Calculators <span><i
+                                    class="fa-solid fa-angle-down"></i></span></a>
+                        <div class="submenu">
+                            <a href="./eligibility.html">Loan Eligibility</a>
+                            <a href="./calculator.html">EMI Calculators</a>
+                        </div>
+                    </li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="cta-1"><!-- Sign In/Sign Up Btn -->
+                    <a href="./signin.html">Sign In</a>
+                    <a href="./signup.html">Sign Up</a>
+                </div>
+                <button class="toggle"><i class="fa-solid fa-bars"></i></button>
+            </nav>
+        </div>
+    </header>
+
+    <section>
+        <div class="sign-in mt-3 pt-5">
+            <div class="container mt-5">
+                <div class="row d-flex align-items-center justify-content-center">
+                    <div class="col-md-6 col-lg-5">
+                        <img src="./img/Sign_up_img.webp" alt="sign-in">
+                    </div>
+                    <div class="col-md-6 col-lg-5">
+                        <div class="card-shadow p-4">
+                            <h3 class="text-center">Create new account</h3>
+                            <p class="text-center">Welcome to <strong class="colr">Retail Pe,</strong> Please enter your Information</p>
+                            <form class="sign-in-form">
+                                <div class="mb-2">
+                                    <label class="form-topic">Mobile</label>
+                                    <input type="text" class="form-input w-100 border border-dark" placeholder="Enter your number" required>
+                                </div>
+                                <div class="mb-2">
+                                    <label class="form-topic">Password</label>
+                                    <input type="password" class="form-input w-100 border border-dark" placeholder="Make a new password" required>
+                                </div>
+                                <div class="mb-2">
+                                    <label class="form-topic">OTP*</label>
+                                    <input type="text" class="form-input w-100 border border-dark" placeholder="Enter OTP">
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex align-items-center ">
+                                        <input type="checkbox" id="rememberMe">
+                                        <label for="rememberMe" class="form-check-topic pl-2 m-0 w-100">Remember me</label>
+                                    </div>
+                                    <a href="" class="pass text-primary">Forgot Password?</a>
+                                </div>
+                                <button type="submit" class="btn bton btn-primary w-100 py-2 mt-2">Sign In</button>
+                                <div class="text-dsg text-center my-3">OR</div>
+                                <button type="button" class="btn d-flex justify-content-center align-items-center in-btn btn-outline-danger w-100"><i class="fa-brands fa-google"></i> Sign in with Google</button>
+                                <p class="text-center pt-2">Doesn't have an account yet? <a href="#" class="pass text-primary fw-bold">Sign Up</a></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer Section -->
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <!-- <div class="toggle-bar" onclick="toggleFooter()"><i class="fa-solid fa-bars"></i></div> -->
+                <div class="togglepage">
+                    <div class="primary-footer">
+                        <div class="ftr-itm">
+                            <a class="drop" href=""><img src="./img/Logo/Logo_maker_project-1-removebg-preview-1..webp" alt=""></a>
+                            <form action="">
+                                <input class="frm-info" type="text" name="text" id="text"
+                                    placeholder="Enter Your Email...">
+                                <button class="ftr-submit" type="submit"><i class="fa-solid fa-arrow-right-long"></i></button>
+                            </form>
+                            <div class="ftr-link">
+                                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <!-- <div class="ftr-itm">
+                            <h2><a href="#">Resources</a></h2>
+                            <p><a href="#">Blog</a></p>
+                            <p><a href="#">Mutual Fund Explorer</a></p>
+                            <p><a href="#">Blog</a></p>
+                            <p><a href="#">Mutual Fund Explorer</a></p>
+                            <p><a href="#">Blog</a></p>
+                            <p><a href="#">Mutual Fund Explorer</a></p>
+                        </div> -->
+                        <div class="ftr-itm">
+                            <h2><a href="">Risk & Management</a></h2>
+                            <p><a href="./terms.html">Terms & Conditions</a></p>
+                            <p><a href="">Privacy Policy</a></p>
+                            <p><a href="">Risk</a></p>
+                            <p><a href="">Disclimer</a></p>
+                        </div>
+                        <div class="ftr-itm">
+                            <h2><a href="">Contact Us</a></h2>
+                            <a href="">Madhyamgram, Chandigard Kol - 700130</a>
+                        </div>
+                    </div>
+                    <!-- <div class="secondery-footer">
+                        <div class="ftr-itm">
+                            <h2><a href="#">FUND CATEGORY</a></h2>
+                            <p><a href="#">EQUITY FUNDS</a></p>
+                            <p><a href="#">EQUITY FUNDS</a></p>
+                            <p><a href="#">EQUITY FUNDS</a></p>
+                            <p><a href="#">EQUITY FUND</a>S</p>
+                            <p><a href="#">EQUITY FUNDS</a></p>
+                            <p><a href="#">EQUITY FUNDS</a></p>
+                        </div>
+                        <div class="ftr-itm">
+                            <h2><a href="#">MUTUAL FUND HOUSE</a></h2>
+                            <p><a href="#">SBI Mutal Funds</a></p>
+                            <p><a href="#">SBI Mutal Funds</a></p>
+                            <p><a href="#">SBI Mutal Funds</a></p>
+                            <p><a href="#">SBI Mutal Funds</a></p>
+                            <p><a href="#">SBI Mutal Funds</a></p>
+                            <p><a href="#">SBI Mutal Funds</a></p>
+                            <p><a href="#">SBI Mutal Funds</a></p>
+                        </div>
+                        <div class="ftr-itm">
+                            <p><a href="#">SBI Mutal Funds</a></p>
+                            <p><a href="#">SBI Mutal Funds</a></p>
+                            <p><a href="#">SBI Mutal Funds</a></p>
+                            <p><a href="#">SBI Mutal Funds</a></p>
+                            <p><a href="#">SBI Mutal Funds</a></p>
+                            <p><a href="#">SBI Mutal Funds</a></p>
+                            <p><a href="#">SBI Mutal Funds</a></p>
+                        </div>
+                        <div class="ftr-itm">
+                            <p><a href="#">SBI Mutal Funds</a></p>
+                            <p><a href="#">SBI Mutal Funds</a></p>
+                            <p><a href="#">SBI Mutal Funds</a></p>
+                            <p><a href="#">SBI Mutal Funds</a></p>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="copyright">
+                    <p>© Copyright Retail Pe (NFSPL) All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
